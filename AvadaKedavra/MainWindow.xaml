@@ -1,0 +1,24 @@
+﻿<Window x:Class="AvadaKedavra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AvadaKedavra"
+        mc:Ignorable="d"
+        Title="기린 복사" Height="200" Width="400"
+        ResizeMode="NoResize"
+        UseLayoutRounding="True"
+        RenderOptions.BitmapScalingMode="HighQuality"
+        Icon="dddddddd.ico">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,0" FontSize="11">
+            <Hyperlink NavigateUri="https://blog.naver.com/cosmic_rabbit" RequestNavigate="Hyperlink_RequestNavigate">
+                <Run Text="배포자 블로그 방문하기"/>
+            </Hyperlink>
+        </TextBlock>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="StatusText" Text="감시 중..." FontSize="16" Margin="10"/>
+            <TextBlock x:Name="LogText" Text="Google Photos 복사본을 감지하면 정리합니다." Foreground="Gray"/>
+        </StackPanel>
+    </Grid></Window>
